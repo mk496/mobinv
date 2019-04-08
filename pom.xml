@@ -11,7 +11,7 @@
   <artifactId>hkrbudgeting-core</artifactId>
   <packaging>jar</packaging>
   <name>${project.artifactId}</name>
-  <description>Core of the server for the hkrbudgeting application - a simple example using the Open Application Standard Platform for Java (OASP4J).</description>
+  <description>Core of the server for mobile intentory application - a simple example using the Open Application Standard Platform for Java (OASP4J).</description>
 
   <properties>
     <java.version>1.8</java.version>
