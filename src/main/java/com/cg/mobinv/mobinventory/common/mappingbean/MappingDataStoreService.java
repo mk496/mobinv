@@ -20,7 +20,7 @@ public class MappingDataStoreService {
     private final Logger logger = LoggerFactory.getLogger(MappingDataStoreService.class);
 
     @Autowired
-    private TitleDataStore titleDataStore;
+    private MaterialDataStore titleDataStore;
 
     private Map<String, AbstractDataStore<?, ?>> edmEntityDataStoreLookup;
 
@@ -28,7 +28,7 @@ public class MappingDataStoreService {
     private void mapDataStores() {
 
         this.edmEntityDataStoreLookup = new HashMap<String, AbstractDataStore<?, ?>>();
-        this.edmEntityDataStoreLookup.put(TitleTo.class.getAnnotation(EdmEntitySet.class).name(), this.titleDataStore);
+        this.edmEntityDataStoreLookup.put(MaterialTo.class.getAnnotation(EdmEntitySet.class).name(), this.titleDataStore);
         this.logger.info("All loaded repos  :" + this.edmEntityDataStoreLookup);
     }
 

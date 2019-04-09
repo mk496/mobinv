@@ -7,8 +7,8 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
-import com.cg.mobinv.mobinventory.common.api.to.TitleTo;
-import com.cg.mobinv.mobinventory.logic.api.TitleLogic;
+import com.cg.mobinv.mobinventory.common.api.to.MaterialTo;
+import com.cg.mobinv.mobinventory.logic.api.MaterialLogic;
 import com.cg.mobinv.mobinventory.service.api.TitleService;
 
 /**
@@ -21,22 +21,22 @@ public class TitleServiceImpl implements TitleService {
   private final String KEY = "Id";
 
   @Inject
-  TitleLogic titleLogic;
+  MaterialLogic titleLogic;
 
   @Override
-  public TitleTo createEntity(TitleTo to) {
+  public MaterialTo createEntity(MaterialTo to) {
 
     return this.titleLogic.create(to);
   }
 
   @Override
-  public TitleTo createEmptyEntity() {
+  public MaterialTo createEmptyEntity() {
 
     return this.titleLogic.createEmpty();
   }
 
   @Override
-  public TitleTo updateEntity(TitleTo to) {
+  public MaterialTo updateEntity(MaterialTo to) {
 
     return this.titleLogic.update(to);
   }
@@ -49,25 +49,25 @@ public class TitleServiceImpl implements TitleService {
   }
 
   @Override
-  public List<TitleTo> readAllEntities() {
+  public List<MaterialTo> readAllEntities() {
 
     return this.titleLogic.readAll();
   }
 
   @Override
-  public TitleTo readEntity(Map<String, Object> keys) {
+  public MaterialTo readEntity(Map<String, Object> keys) {
 
     return this.titleLogic.readById((Long) keys.get(this.KEY));
   }
 
   @Override
-    public <S> List<S> readRelatedEntities(TitleTo source, Class<S> targetClass) {
+    public <S> List<S> readRelatedEntities(MaterialTo source, Class<S> targetClass) {
 
         return this.titleLogic.readRelatedEntities(source, targetClass);
   }
 
   @Override
-    public <S> S readRelatedEntity(TitleTo source, Class<S> targetClass) {
+    public <S> S readRelatedEntity(MaterialTo source, Class<S> targetClass) {
   	
         return this.titleLogic.readRelatedEntity(source, targetClass);
   }
@@ -75,11 +75,11 @@ public class TitleServiceImpl implements TitleService {
   @Override
   public Class<?> getToClassType() {
 
-    return TitleTo.class;
+    return MaterialTo.class;
   }
 
 @Override
-public TitleTo setRelation(TitleTo source, Object nestedObject) {
+public MaterialTo setRelation(MaterialTo source, Object nestedObject) {
 	
 	return this.titleLogic.setRelation(source, nestedObject);
 }
