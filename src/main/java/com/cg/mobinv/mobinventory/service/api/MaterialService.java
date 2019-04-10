@@ -5,6 +5,6 @@ import com.cg.mobinv.mobinventory.common.api.to.MaterialTo;
 /**
  * @author manjinsi
  */
-public interface TitleService extends ODataOperationService<MaterialTo> {
+public interface MaterialService extends ODataOperationService<MaterialTo> {
 
 }

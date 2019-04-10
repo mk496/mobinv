@@ -9,14 +9,14 @@ import org.springframework.stereotype.Service;
 
 import com.cg.mobinv.mobinventory.common.api.to.MaterialTo;
 import com.cg.mobinv.mobinventory.logic.api.MaterialLogic;
-import com.cg.mobinv.mobinventory.service.api.TitleService;
+import com.cg.mobinv.mobinventory.service.api.MaterialService;
 
 /**
  * @author manjinsi
  *
  */
 @Service
-public class TitleServiceImpl implements TitleService {
+public class MaterialServiceImpl implements MaterialService {
 
   private final String KEY = "Id";
 
