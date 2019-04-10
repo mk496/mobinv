@@ -73,20 +73,12 @@ public class MaterialDataStore extends AbstractDataStoreBean<MaterialTo, Materia
 
     @Override
     public MaterialTo mapJpaEntityToEdmObject(MaterialEntity object) {
-//        object.setActivityGroup(null);
-//        object.setAmplificationMemoMaterials(null);
-//        object.setAppropriationMemoMaterials(null);
-//        object.setAttributeMatchings(null);
-//        object.setBudgetMemoMaterials(null);
-//        object.setCommitmentAuthorizations(null);
-//        object.setFileMatchings(null);
-//        object.setFinancings(null);
+
     	MaterialTo tos = new MaterialTo();
     	tos.setId(object.getId());
     	tos.setKeyFigure(tos.getKeyFigure());
     	tos.setLongIdentifier(object.getLongIdentifier());
-    	tos.setReasonDisputable(object.getReasonDisputable());
-    	tos.setShortIdentifier(object.getShortIdentifier());
+    
 //        return mapper.map(object, MaterialTo.class);
     	return tos;
     }
@@ -95,10 +87,7 @@ public class MaterialDataStore extends AbstractDataStoreBean<MaterialTo, Materia
     public Object readRelatedData(Class<?> relatedTypeClass, Object relatedObject) {
         Object result = null;
 
-//        if (ChapterTo.class == relatedTypeClass) {
-//            List<MaterialEntity> rounds = this.MaterialEntityRepository.findByChapter_Id(((ChapterTo) relatedObject).getId());
-//            result = rounds.stream().map(x -> mapJpaEntityToEdmObject(x)).collect(Collectors.toList());
-//        }
+
         return result;
     }
 

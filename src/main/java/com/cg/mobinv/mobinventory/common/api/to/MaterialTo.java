@@ -19,11 +19,9 @@ public class MaterialTo {
     @EdmProperty
     private String longIdentifier;
 
-    @EdmProperty
-    private String reasonDisputable;
+  
 
-    @EdmProperty
-    private String shortIdentifier;
+   
 
 //    @EdmProperty
 //    private String explanation;
@@ -98,35 +96,6 @@ public class MaterialTo {
         this.longIdentifier = longIdentifier;
     }
 
-    /**
-     * @return reasonDisputable
-     */
-    public String getReasonDisputable() {
-
-        return this.reasonDisputable;
-    }
-
-    /**
-     * @param reasonDisputable new value of {@link #getreasonDisputable}.
-     */
-    public void setReasonDisputable(String reasonDisputable) {
-
-        this.reasonDisputable = reasonDisputable;
-    }
-
-    /**
-     * @return shortIdentifier
-     */
-    public String getShortIdentifier() {
-
-        return this.shortIdentifier;
-    }
-
-    /**
-     * @param shortIdentifier new value of {@link #getshortIdentifier}.
-     */
-    public void setShortIdentifier(String shortIdentifier) {
-
-        this.shortIdentifier = shortIdentifier;
-    }
+   
+    
 }

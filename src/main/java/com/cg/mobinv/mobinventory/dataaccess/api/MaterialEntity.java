@@ -37,13 +37,7 @@ public class MaterialEntity implements Serializable {
   @Column(name = "\"LongIdentifier\"", length = 512)
   private String longIdentifier;
 
-  @Nationalized
-  @Column(name = "\"ReasonDisputable\"", length = 1024)
-  private String reasonDisputable;
-
-  @Nationalized
-  @Column(name = "\"ShortIdentifier\"", length = 256)
-  private String shortIdentifier;
+  
 
   public MaterialEntity() {
 
@@ -97,36 +91,6 @@ public class MaterialEntity implements Serializable {
     this.longIdentifier = longIdentifier;
   }
 
-  /**
-   * @return reasonDisputable
-   */
-  public String getReasonDisputable() {
-
-    return this.reasonDisputable;
-  }
-
-  /**
-   * @param reasonDisputable new value of {@link #getreasonDisputable}.
-   */
-  public void setReasonDisputable(String reasonDisputable) {
-
-    this.reasonDisputable = reasonDisputable;
-  }
-
-  /**
-   * @return shortIdentifier
-   */
-  public String getShortIdentifier() {
-
-    return this.shortIdentifier;
-  }
-
-  /**
-   * @param shortIdentifier new value of {@link #getshortIdentifier}.
-   */
-  public void setShortIdentifier(String shortIdentifier) {
-
-    this.shortIdentifier = shortIdentifier;
-  }
+ 
 
 }
